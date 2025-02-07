@@ -14,22 +14,34 @@
 
     <h2>My Visual Identity</h2>
 
-    <picture>
+    <!-- <picture> -->
+        <!-- First source for screens up to 600px -->
+        <!-- <source srcset="./assest/firstimage.jpg" media="(max-width: 600px)"> -->
+        <!-- Second source for screens between 601px and 1200px -->
+        <!-- <source srcset="./assest/secondimage.jpg" media="(min-width: 601px) and (max-width: 1200px)"> -->
+        <!-- Third source for screens larger than 1200px -->
+        <!-- <source srcset="./assestthirdimage.jpg" media="(min-width: 1201px)"> -->
+        <!-- Fallback image -->
         
-        <img src="" alt="A representation of my journey">
+    <!-- </picture> -->
+
+    <picture>
+        <source srcset="./assest/thirdimage.jpg"  media="(min-width: 1201px)">
+        <source srcset="./assest/secondimage.jpg"  media="(min-width: 601px) and (max-width: 1200px)">
+        <source srcset="./assest/firstimage.jpg"  media="(max-width: 600px)">
+        <img src="./assest/secondimage.jpg" alt="image" >
     </picture>
+    
 
     <h2>My Voice</h2>
     
-    <audio controls style="width: 100%;">
-        <source src="" type="audio">
-    </audio>
+    <audio src="./assest/Moses_Blis_ft_Lyrical_HI_-_Daddy_Wey_Dey_Pamper_CeeNaija.com_.mp3"   
+                controls>About-Me Using Audio</audio>
     
     <h2>My Vision in Motion</h2>
-    <video controls style="width: 20%;">
-        <source src="" type="video">
-    </video>
-    
+    <video src="./assest/video.mp4" 
+                            height="300px"
+                            controls></video>
     
 
     
